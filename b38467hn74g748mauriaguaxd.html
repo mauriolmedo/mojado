@@ -1,0 +1,22 @@
+<h5>Pistola de agua Activada!</h5>
+<script>
+   function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function demo() {
+    fetch('https://maker.ifttt.com/trigger/mojame/with/key/bVP5A2ZUYL9oP153Omi3XN')
+    console.log("Pistola de agua Activada!");
+    await sleep(5000);
+    fetch('https://maker.ifttt.com/trigger/apagame/with/key/bVP5A2ZUYL9oP153Omi3XN')
+	 await sleep(1000);
+    fetch('https://maker.ifttt.com/trigger/apagame/with/key/bVP5A2ZUYL9oP153Omi3XN')
+	 await sleep(1000);
+    fetch('https://maker.ifttt.com/trigger/apagame/with/key/bVP5A2ZUYL9oP153Omi3XN')
+	 await sleep(1000);
+    fetch('https://maker.ifttt.com/trigger/apagame/with/key/bVP5A2ZUYL9oP153Omi3XN')
+    console.log('Done');
+}
+
+demo();
+</script>
